@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アクセサリー講座カリキュラム</title>
+</head>
+<body>
+
+<style>
+  .accessory-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .accessory-table th,
+  .accessory-table td {
+    padding: 12px 14px;
+    background-color: #f7f7f5;
+    border: 1px solid #ffffff;
+    vertical-align: top;
+  }
+
+  .accessory-table th {
+    background-color: #efefec;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  /* ===== スマホ表示 ===== */
+  @media screen and (max-width: 640px) {
+
+    .accessory-table thead {
+      display: none;
+    }
+
+    .accessory-table,
+    .accessory-table tbody,
+    .accessory-table tr,
+    .accessory-table td {
+      display: block;
+      width: 100%;
+    }
+
+    .accessory-table tr {
+      margin-bottom: 16px;
+      background-color: #ffffff;
+      padding: 8px;
+    }
+
+    .accessory-table td {
+      border: none;
+      background-color: #f7f7f5;
+      margin-bottom: 6px;
+    }
+
+    .accessory-table td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 2px;
+    }
+  }
+</style>
+
+<table class="accessory-table">
+  <thead>
+    <tr>
+      <th>回</th>
+      <th>テーマ</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="回">第1回</td>
+      <td data-label="テーマ">アクセサリー制作の基礎</td>
+      <td data-label="内容">
+        ・道具の使い方<br>
+        ・素材の種類と特徴<br>
+        ・基本的なパーツの扱い方
+      </td>
+    </tr>
+    <tr>
+      <td data-label="回">第2回</td>
+      <td data-label="テーマ">ピアス・イヤリング制作</td>
+      <td data-label="内容">
+        ・金具の選び方<br>
+        ・バランスの取り方<br>
+        ・仕上げのポイント
+      </td>
+    </tr>
+    <tr>
+      <td data-label="回">第3回</td>
+      <td data-label="テーマ">ネックレス制作</td>
+      <td data-label="内容">
+        ・チェーンとトップの組み合わせ<br>
+        ・長さ調整の考え方<br>
+        ・日常使いしやすいデザイン
+      </td>
+    </tr>
+    <tr>
+      <td data-label="回">第4回</td>
+      <td data-label="テーマ">オリジナルデザイン制作</td>
+      <td data-label="内容">
+        ・デザイン発想法<br>
+        ・素材選びの応用<br>
+        ・作品発表とフィードバック
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
